@@ -1,6 +1,6 @@
 let classifier;
 // Model URL
-let imageModelURL = 'https://teachablemachine.withgoogle.com/models/8-740vK7q/';
+let imageModelURL = 'https://teachablemachine.withgoogle.com/models/zpnMxr812/';
 
 // Video
 let video;
@@ -77,7 +77,7 @@ function gotResult(error, results) {
 
   if (countSameFrame > 30) {
     countSameFrame = 0;
-    if (predVal == "Nothing") {
+    if (predVal == "null") {
       predVal = ""
     }
     finalText = finalText + predVal;
@@ -85,7 +85,7 @@ function gotResult(error, results) {
 
   // console.log("results[0].label: ", results[0].label);
 
-  label2 = "My name is: " + finalText;
+  label2 = "(Hold sign for 3 seconds) My name is: " + finalText;
   label = results[0].label;
 
   // Classifiy again!
