@@ -1,6 +1,6 @@
 let classifier;
 // Model URL
-let imageModelURL = 'https://teachablemachine.withgoogle.com/models/zlvfwHwtz/';
+let imageModelURL = 'https://teachablemachine.withgoogle.com/models/zpnMxr812/';
 
 // Video
 let video;
@@ -85,7 +85,7 @@ function gotResult(error, results) {
 
   // console.log("results[0].label: ", results[0].label);
 
-  label2 = "Developed By Team- " + finalText;
+  label2 = "(Hold sign for 3 seconds) My name is: " + finalText;
   label = results[0].label;
 
   // Classifiy again!
