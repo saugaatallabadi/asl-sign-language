@@ -1,6 +1,6 @@
 let classifier;
 // Model URL
-let imageModelURL = 'https://teachablemachine.withgoogle.com/models/zpnMxr812/';
+let imageModelURL = 'https://teachablemachine.withgoogle.com/models/R_HtUsg_9/';
 
 // Video
 let video;
@@ -75,7 +75,7 @@ function gotResult(error, results) {
 
   console.log(countSameFrame);
 
-  if (countSameFrame > 90) {
+  if (countSameFrame > 70) {
     countSameFrame = 0;
     if (predVal == "null") {
       predVal = ""
