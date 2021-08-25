@@ -75,7 +75,7 @@ function gotResult(error, results) {
 
   console.log(countSameFrame);
 
-  if (countSameFrame > 30) {
+  if (countSameFrame > 90) {
     countSameFrame = 0;
     if (predVal == "null") {
       predVal = ""
